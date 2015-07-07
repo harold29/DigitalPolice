@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.retochacao" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_policia"
+        android:label="Policia Digital"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".IntroducirCedula"
+            android:label="POLICIA DIGITAL" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".introducir_placa"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".Introducir_placa_y_cedula"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".detalle_de_multa"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".detalle_de_vehiculo"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".verificar_por_cedula"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".menu_de_consultas"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".multas_e_historial"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".multas_vehiculo"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+        <activity
+            android:name=".multas_cedula_y_placa"
+            android:label="POLICIA DIGITAL" >
+        </activity>
+    </application>
+
+</manifest>

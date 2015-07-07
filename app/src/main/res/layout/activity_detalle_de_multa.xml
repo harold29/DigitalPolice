@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.retochacao.detalle_de_multa"
+    android:orientation="vertical"
+    android:background="@drawable/pantallas_con_colores_chacao"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+        <ImageView
+            android:id="@+id/boleta_peq_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lista" />
+        <TextView
+            android:id="@+id/fecha_boleta_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="02/07/2013"
+            android:layout_toRightOf="@id/boleta_peq_image_view"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/num_boleta_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="315324"
+            android:layout_toRightOf="@id/boleta_peq_image_view"
+            android:textColor="#000000"
+            android:paddingLeft="16dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_above="@id/fecha_boleta_text_view"
+            />
+
+        <TextView
+            android:id="@+id/status_boleta_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/boleta_peq_image_view"
+            android:text="MOROSO"
+            android:textStyle="bold"
+            android:layout_below="@id/fecha_boleta_text_view"
+            android:textColor="#D50000"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Bs 1.500,00"
+            android:textStyle="bold"
+            android:layout_below="@id/fecha_boleta_text_view"
+            android:textColor="#D50000"
+            android:textAppearance="?android:textAppearanceLarge"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <ImageView
+            android:id="@+id/foto_persona_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/student_id" />
+        <TextView
+            android:id="@+id/nombre_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fernando Saraiva"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/foto_persona_image_view"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerInParent="true"
+            android:paddingBottom="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/foto_persona_image_view"
+            android:layout_height="wrap_content"
+            android:text="21.615.116"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <ImageView
+            android:id="@+id/carrito_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carro" />
+        <TextView
+            android:id="@+id/tipo_vehiculo_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/carrito_image_view"
+            android:text="Tipo:      Sedan"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/placa_vehiculo_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/carrito_image_view"
+            android:text="Placa:    MDK34F"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tipo_vehiculo_text_view"
+            />
+        <TextView
+            android:id="@+id/color_vehiculo_text_view"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@id/carrito_image_view"
+            android:layout_height="wrap_content"
+            android:text="Color:     Gris"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_below="@id/tipo_vehiculo_text_view"
+            android:layout_centerHorizontal="true"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#000000"/>
+
+            <Button
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="pasarADetalleVehiculo"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/consultar_button"
+            android:text="Inicio"
+            android:layout_centerHorizontal="true"
+            android:onClick="inicio"
+            android:padding="8dp"
+            android:textSize="24dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

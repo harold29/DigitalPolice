@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RetoChacao</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_introducir_placa">introducir_placa</string>
+    <string name="title_activity_introducir_placa_y_cedula">Introducir_placa_y_cedula</string>
+    <string name="title_activity_detalle_de_multa">detalle_de_multa</string>
+    <string name="title_activity_detalle_de_vehiculo">detalle_de_vehiculo</string>
+    <string name="title_activity_verificar_por_cedula">verificar_por_cedula</string>
+    <string name="title_activity_menu_de_consultas">menu_de_consultas</string>
+    <string name="title_activity_multas_e_historial">multas_e_historial</string>
+    <string name="title_activity_multas_vehiculo">multas_vehiculo</string>
+    <string name="title_activity_multas_cedula_y_placa">multas_cedula_y_placa</string>
+</resources>

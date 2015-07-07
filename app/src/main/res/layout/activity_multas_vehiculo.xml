@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".multas_vehiculo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pantalla_chacao"
+    android:paddingTop="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    >
+
+
+    <TextView
+        android:text="Multas"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        />
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:stretchColumns="4"
+        android:background="#99C9DBEF"
+        >
+
+        <TableRow>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="Boleta"
+                    android:padding="10dip"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="Nombre"
+                    android:padding="10dip"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cédula"
+                    android:padding="10dip"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="Fecha"
+                    android:padding="10dip"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:onClick="verMulta"
+            android:background="#99F44336">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="315324"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="F Saraiva"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="21615116"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:text="02/07/13"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/consultar_button"
+        android:text="Inicio"
+        android:padding="8dp"
+        android:textSize="24dp"
+        android:onClick="inicio"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
