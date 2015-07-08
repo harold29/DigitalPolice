@@ -47,9 +47,5 @@ public class multas_e_historial extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
-    public void consultaPorCedula (View view) {
-        Intent nextScreen = new Intent(getApplicationContext(), verificar_por_cedula.class);
-        startActivity(nextScreen);
-    }
 
 }

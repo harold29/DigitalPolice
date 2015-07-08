@@ -43,25 +43,13 @@ public class menu_de_consultas extends ActionBarActivity {
     }
 
 
-    public void activarCedula (View view) {
-        boolean on = ((ToggleButton) view).isChecked();
-        if (on) {
-            cedula = true;
-        } else {
-            cedula = false;
-        }
-    }
-
-    public void activarPlaca (View view) {
-        boolean on = ((ToggleButton) view).isChecked();
-        if (on) {
-            placa = true;
-        } else {
-            placa = false;
-        }
+    public void consultarDatos (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), Introducir_placa_y_cedula.class);
+        startActivity(nextScreen);
     }
 
 
+/*
     public void consultar(View view){
         Intent nextScreen;
         if (cedula && placa) {
@@ -75,4 +63,6 @@ public class menu_de_consultas extends ActionBarActivity {
             startActivity(nextScreen);
         }
     }
+    */
+
 }

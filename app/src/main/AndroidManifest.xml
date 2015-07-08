@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".introducir_placa"
-            android:label="POLICIA DIGITAL" >
-        </activity>
-        <activity
             android:name=".Introducir_placa_y_cedula"
             android:label="POLICIA DIGITAL" >
         </activity>
@@ -30,10 +26,6 @@
         </activity>
         <activity
             android:name=".detalle_de_vehiculo"
-            android:label="POLICIA DIGITAL" >
-        </activity>
-        <activity
-            android:name=".verificar_por_cedula"
             android:label="POLICIA DIGITAL" >
         </activity>
         <activity
