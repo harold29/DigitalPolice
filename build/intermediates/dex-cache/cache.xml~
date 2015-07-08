@@ -9,11 +9,19 @@
         <dex dex="C:\Users\Alvarez Cortesia\AndroidStudioProjects\DigitalPolice\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-8a8a69059ebafcbde11e1dc6954f2d8ccef9f3e7.jar" />
     </item>
     <item
+<<<<<<< HEAD
         jar="C:\Users\Alvarez Cortesia\AndroidStudioProjects\DigitalPolice\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
         sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
         <dex dex="C:\Users\Alvarez Cortesia\AndroidStudioProjects\DigitalPolice\app\build\intermediates\pre-dexed\debug\classes-3239b5a1019e3d94cb6c2de8a4f64be78fc6fd54.jar" />
+=======
+        jar="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/pre-dexed/debug/classes-ea6df9a38917c8932c7e997e65b390837e2b0a5a.jar" />
+>>>>>>> origin/menu_principal
     </item>
     <item
         jar="C:\Users\Alvarez Cortesia\AndroidStudioProjects\DigitalPolice\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
@@ -28,6 +36,27 @@
         revision="23.0.0 rc2"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
         <dex dex="C:\Users\Alvarez Cortesia\AndroidStudioProjects\DigitalPolice\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-a76c125047a203ceee5b038685c8f98cd0175485.jar" />
+    </item>
+    <item
+        jar="/home/miguel/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/miguel/DesarrolloAndroid/RetoChacao/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-7468a368b2400719fd0c61c6688797744c7c7fe5.jar" />
+    </item>
+    <item
+        jar="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/pre-dexed/debug/classes-9abc813ff2a8072609d611e205ec0c4a1f9aa442.jar" />
+    </item>
+    <item
+        jar="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/miguel/DesarrolloAndroid/repo_retoChacao/DigitalPolice/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-691ae67dbba6e5a20882803e4b08bc877b25748d.jar" />
     </item>
 
 </items>
