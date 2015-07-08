@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.retochacao.Login_Supervisor"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp">
+
+    <TextView android:text="ZONA RESTRINGIDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginBottom="70dp"/>
+
+    <EditText
+        android:id="@+id/Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:hint="Usuario"
+        android:text="30145"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+
+        />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Usuario"
+        android:hint="Contraseña"
+        android:inputType="text"
+        android:text="EstaEsMiClave"
+        android:padding="15dp"
+        android:password="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="30dp"
+        android:onClick="pasarACedula"
+        android:text="Ingresar"
+        android:background="@drawable/consultar_button"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+
+        />
+
+    <Button
+        android:id="@+id/Limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Limpiar"
+        android:background="@drawable/consultar_button"
+        android:padding="8dp"
+        android:onClick="limpiarDatos"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+
+
+</LinearLayout>
