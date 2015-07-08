@@ -11,9 +11,6 @@ import android.widget.ToggleButton;
 
 public class menu_de_consultas extends ActionBarActivity {
 
-    boolean cedula = false;
-    boolean placa = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

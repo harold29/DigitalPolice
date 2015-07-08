@@ -44,7 +44,7 @@
 
 
         <EditText
-            android:id="@+id/placa_edit_text"
+            android:id="@+id/id_a_consultar_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="40dp"
@@ -63,7 +63,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="36dp"
             android:background="@drawable/consultar_button"
-            android:onClick="multaVehiculo"
+            android:onClick="mostrarMultaCedulaPlaca"
             android:text="CONSULTAR"
             android:padding="8dp"
             android:textSize="30dp" />
