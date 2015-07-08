@@ -52,6 +52,10 @@
             android:name=".multas_cedula_y_placa"
             android:label="POLICIA DIGITAL" >
         </activity>
+        <activity
+            android:name=".Login_Supervisor"
+            android:label="@string/title_activity_login__supervisor" >
+        </activity>
     </application>
 
 </manifest>
