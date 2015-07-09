@@ -13,4 +13,5 @@
     <string name="title_activity_multas_vehiculo">multas_vehiculo</string>
     <string name="title_activity_multas_cedula_y_placa">multas_cedula_y_placa</string>
     <string name="title_activity_login__supervisor">Login_Supervisor</string>
+    <string name="title_activity_funcionarios">Funcionarios</string>
 </resources>

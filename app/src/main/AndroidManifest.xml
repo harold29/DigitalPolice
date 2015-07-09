@@ -56,6 +56,10 @@
             android:name=".Login_Supervisor"
             android:label="@string/title_activity_login__supervisor" >
         </activity>
+        <activity
+            android:name=".Funcionarios"
+            android:label="@string/title_activity_funcionarios" >
+        </activity>
     </application>
 
 </manifest>
