@@ -11,3 +11,4 @@
 .idea/workspace.xml
 local.properties
 build/intermediates/gradle_project_sync_data.bin
+build/intermediates/dex-cache/cache.xml
