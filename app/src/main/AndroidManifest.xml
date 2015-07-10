@@ -41,12 +41,20 @@
             android:label="POLICIA DIGITAL" >
         </activity>
         <activity
-            android:name=".multas_cedula_y_placa"
-            android:label="POLICIA DIGITAL" >
-        </activity>
-        <activity
             android:name=".Login_Supervisor"
             android:label="@string/title_activity_login__supervisor" >
+        </activity>
+        <activity
+            android:name=".menu_supervisor"
+            android:label="@string/title_activity_menu_supervisor" >
+        </activity>
+        <activity
+            android:name=".funcionarios"
+            android:label="@string/title_activity_menu_supervisor" >
+        </activity>
+        <activity
+            android:name=".detalle_de_multa2"
+            android:label="@string/title_activity_detalle_de_multa2" >
         </activity>
     </application>
 

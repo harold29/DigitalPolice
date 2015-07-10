@@ -49,10 +49,16 @@ public class IntroducirCedula extends ActionBarActivity {
         contraseña.setText("");
     }
 
-    public void pasarACedula (View view){
-        Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
-        startActivity(nextScreen);
+    public void pasarACedula (View view) {
+        EditText editText = (EditText) findViewById(R.id.Usuario);
+        String texto = editText.getText().toString();
+        if (texto.equals("admin")) {
+            Intent nextScreen = new Intent(getApplicationContext(), menu_supervisor.class);
+            startActivity(nextScreen);
+        } else {
+            Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
+            startActivity(nextScreen);
+        }
     }
-
 }
 

@@ -8,18 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class detalle_de_vehiculo extends ActionBarActivity {
+public class menu_supervisor extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalle_de_vehiculo);
+        setContentView(R.layout.activity_menu_supervisor);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_detalle_de_vehiculo, menu);
+        getMenuInflater().inflate(R.menu.menu_menu_supervisor, menu);
         return true;
     }
 
@@ -38,8 +38,8 @@ public class detalle_de_vehiculo extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void inicio (View view){
-        Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
+    public void verFuncionarios (View view){
+        Intent nextScreen = new Intent(getApplicationContext(), Login_Supervisor.class);
         startActivity(nextScreen);
     }
 

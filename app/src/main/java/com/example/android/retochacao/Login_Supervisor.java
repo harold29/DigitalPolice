@@ -1,9 +1,12 @@
 package com.example.android.retochacao;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class Login_Supervisor extends ActionBarActivity {
@@ -34,5 +37,24 @@ public class Login_Supervisor extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void limpiarDatos (View view) {
+        EditText usuario = (EditText) findViewById(R.id.Usuario);
+        usuario.setText("");
+        EditText contraseña = (EditText) findViewById(R.id.Contraseña);
+        contraseña.setText("");
+    }
+
+    public void verFuncionarios (View view) {
+        EditText editText = (EditText) findViewById(R.id.Usuario);
+        String texto = editText.getText().toString();
+        if (texto.equals("admin")) {
+            Intent nextScreen = new Intent(getApplicationContext(), funcionarios.class);
+            startActivity(nextScreen);
+        } else {
+            Intent nextScreen = new Intent(getApplicationContext(), Login_Supervisor.class);
+            startActivity(nextScreen);
+        }
     }
 }
