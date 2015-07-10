@@ -17,141 +17,42 @@
         android:layout_weight="1"
         android:text="OPCIONES DISPONIBLES"
         android:textSize="26sp"
+        android:gravity="center"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:paddingLeft="25dp"
         />
-    <RelativeLayout
+
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="5dp"
         android:layout_weight="3"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:background="@drawable/consultar_datos_xml"
+        android:onClick="consultarDatos"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CONSULTAR DATOS"
-            android:layout_margin="5dp"
-            android:layout_centerVertical="true"
-            android:textStyle="bold"
-            android:textSize="26dp"
-            android:elegantTextHeight="true"
-            android:layout_alignParentRight="true"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:onClick="consultarDatos"
-            android:background="@drawable/cedula_button"/>
-
-        <Button
-            android:id="@+id/id_image_button"
-            android:layout_width="80dp"
-            android:layout_margin="8dp"
-            android:layout_alignParentBottom="true"
-            android:onClick="activarCedula"
-            android:background="@drawable/icon_search"
-            android:layout_height="80dp" />
-    </RelativeLayout>
-    <RelativeLayout
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
         android:layout_weight="3"
-        android:layout_margin="5dp">
+        android:layout_margin="10dp"
+        android:background="@drawable/mapa_del_crimen_xml"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MAPA DE CRIMEN"
-            android:layout_centerVertical="true"
-            android:textStyle="bold"
-            android:layout_marginRight="20dp"
-            android:textSize="26dp"
-            android:elegantTextHeight="true"
-            android:layout_alignParentRight="true"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/cedula_button"/>
-        <Button
-            android:id="@+id/id_image_button"
-            android:layout_width="80dp"
-            android:layout_margin="8dp"
-            android:padding="8dp"
-            android:layout_alignParentBottom="true"
-            android:onClick="activarPlaca"
-            android:background="@drawable/mapa"
-            android:layout_centerVertical="true"
-            android:layout_height="80dp" />
-
-    </RelativeLayout>
-    <RelativeLayout
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_margin="5dp"
-        android:layout_weight="3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="       R C"
-            android:layout_margin="30dp"
-            android:textStyle="bold"
-            android:textSize="32dp"
-            android:layout_marginLeft="300dp"
-            android:layout_centerVertical="true"
-            android:elegantTextHeight="true"
-            android:layout_centerInParent="true"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/cedula_button"/>
-        <Button
-            android:id="@+id/consultar_placa_button"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:onClick="activarPlacaYCedula"
-            android:background="@drawable/lista"
-            android:padding="8dp"
-            android:textSize="30dp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
         android:layout_weight="3"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:background="@drawable/reporte_criminalistico_xml"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="    REGISTRAR\nPROCEDIMIENTO"
-            android:layout_margin="20dp"
-            android:textStyle="bold"
-            android:textSize="26dp"
-            android:elegantTextHeight="true"
-            android:layout_alignParentRight="true"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/cedula_button"/>
-
-        <Button
-            android:id="@+id/id_image_button"
-            android:layout_width="80dp"
-            android:layout_margin="8dp"
-            android:layout_alignParentBottom="true"
-            android:onClick="activarCedula"
-            android:background="@drawable/videocamara"
-            android:layout_height="80dp" />
-    </RelativeLayout>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="10dp"
+        android:background="@drawable/registrar_procedimiento_xml"
+        />
 
 </LinearLayout>
