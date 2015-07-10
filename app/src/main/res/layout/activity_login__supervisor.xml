@@ -72,7 +72,7 @@
         android:padding="8dp"
         android:onClick="limpiarDatos"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#000000"
+        android:textColor="#000000"></Button>
 
 
 </LinearLayout>
