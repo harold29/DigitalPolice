@@ -43,8 +43,22 @@ public class multas_vehiculo extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
+    public void verMulta2 (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_multa2.class);
+        startActivity(nextScreen);
+    }
+
+    public void verCiudadano (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), multas_e_historial.class);
+        startActivity(nextScreen);
+    }
     public void inicio (View view){
         Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
+        startActivity(nextScreen);
+    }
+
+    public void verCarnet (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_vehiculo.class);
         startActivity(nextScreen);
     }
 }

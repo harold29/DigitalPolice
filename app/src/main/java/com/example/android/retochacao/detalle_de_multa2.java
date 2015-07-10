@@ -8,18 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class multas_e_historial extends ActionBarActivity {
+public class detalle_de_multa2 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multas_e_historial);
+        setContentView(R.layout.activity_detalle_de_multa2);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_multas_e_historial, menu);
+        getMenuInflater().inflate(R.menu.menu_detalle_de_multa2, menu);
         return true;
     }
 
@@ -38,18 +38,13 @@ public class multas_e_historial extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void verMulta (View view) {
-        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_multa.class);
-        startActivity(nextScreen);
-    }
-
-    public void verMulta2 (View view) {
-        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_multa2.class);
-        startActivity(nextScreen);
-    }
-
-    public void verVehiculo (View view) {
+    public void pasarADetalleVehiculo (View view) {
         Intent nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
+        startActivity(nextScreen);
+    }
+
+    public void pasarADetallePersona (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), multas_e_historial.class);
         startActivity(nextScreen);
     }
 
@@ -57,5 +52,4 @@ public class multas_e_historial extends ActionBarActivity {
         Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
         startActivity(nextScreen);
     }
-
 }

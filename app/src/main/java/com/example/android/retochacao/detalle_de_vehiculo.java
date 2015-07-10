@@ -43,9 +43,4 @@ public class detalle_de_vehiculo extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
-    public void verBoleta (View view) {
-        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_multa.class);
-        startActivity(nextScreen);
-    }
-
 }

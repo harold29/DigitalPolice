@@ -39,7 +39,12 @@ public class detalle_de_multa extends ActionBarActivity {
     }
 
     public void pasarADetalleVehiculo (View view) {
-        Intent nextScreen = new Intent(getApplicationContext(), detalle_de_vehiculo.class);
+        Intent nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
+        startActivity(nextScreen);
+    }
+
+    public void pasarADetallePersona (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), multas_e_historial.class);
         startActivity(nextScreen);
     }
 
