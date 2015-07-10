@@ -6,8 +6,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:columnCount="3"
-    android:background="#FFFFFF"
-    tools:context=".GridLayoutActivity" >
+    android:background="#FFFFFF">
 
     <!--1era fila -->
 
@@ -449,5 +448,23 @@
         android:fontFamily="Roboto-Thin"
         android:paddingLeft="40dp"
         android:text="Gris" />
+
+    <Button
+        android:id="@+id/vehiculo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="16"
+        android:paddingTop="6dp"
+        android:textSize="30sp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:fontFamily="Roboto-Thin"
+        android:text="Inicio"
+
+        />
 
 </GridLayout>
