@@ -1,7 +1,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="multas_e_historial"
+    tools:context="com.example.android.retochacao.multas_e_historial"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,7 +14,7 @@
 
 
     <TextView
-        android:text="Multas"
+        android:text="Multas del ciudadano\nde cedula V-21.615.116"
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:stretchColumns="4"
+        android:stretchColumns="0"
         android:background="#99C9DBEF"
         >
 
@@ -41,45 +41,37 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
                     android:text="Boleta"
                     android:padding="10dip"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:textColor="#000000"/>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
                     android:text="Fecha"
                     android:padding="10dip"
                     android:textSize="20sp"
                     android:textColor="#000000"
-                    android:gravity="right"/>
+                    android:gravity="center"/>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
                     android:text="Placa"
                     android:padding="10dip"
                     android:textSize="20sp"
                     android:textColor="#000000"
-                    android:gravity="right"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_column="1"
-                    android:text="Estado"
-                    android:padding="10dip"
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:gravity="right"/>
+                    android:gravity="center"/>
+
 
             </LinearLayout>
 
         </TableRow>
 
         <TableRow
-            android:onClick="verMulta"
             android:background="#99F44336">
             <LinearLayout
                 android:layout_height="wrap_content"
@@ -88,39 +80,72 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:onClick="verMulta"
                     android:text="315324"
+                    android:gravity="center"
                     android:padding="10dip"
                     android:textSize="15sp"
                     android:textColor="#000000"/>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
                     android:text="02/07/13"
                     android:padding="10dip"
                     android:textSize="15sp"
                     android:textColor="#000000"
-                    android:gravity="right"/>
+                    android:gravity="center"/>
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="MDK34F"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:background="#993af422">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="verMulta"
+                    android:text="923750"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="08/11/14"
+                    android:padding="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
                     android:text="MDK34F"
                     android:padding="10dip"
                     android:textSize="15sp"
                     android:textColor="#000000"
-                    android:gravity="right"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_column="1"
-                    android:text="MOROSO"
-                    android:padding="10dip"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:gravity="right"/>
+                    android:gravity="center"/>
+
 
             </LinearLayout>
 
@@ -141,7 +166,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:background="#99C9DBEF"
         android:text="Detenido por hurto de vehículo"
         />
