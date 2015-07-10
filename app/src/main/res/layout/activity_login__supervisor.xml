@@ -75,11 +75,11 @@
             android:layout_alignParentLeft="true"
             android:layout_marginRight="30dp"
             android:text="Ingresar"
+            android:onClick="verFuncionarios"
             android:background="@drawable/consultar_button"
             android:padding="8dp"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="#000000"
-
             />
 
         <Button
