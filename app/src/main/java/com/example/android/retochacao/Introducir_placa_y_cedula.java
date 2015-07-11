@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -58,8 +59,9 @@ public class Introducir_placa_y_cedula extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_introducir_placa_y_cedula, menu);
-        return true;
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_introducir_placa_y_cedula, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -71,6 +73,8 @@ public class Introducir_placa_y_cedula extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
+            startActivity(nextScreen);
             return true;
         }
 

@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".IntroducirCedula"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,43 +18,47 @@
         </activity>
         <activity
             android:name=".Introducir_placa_y_cedula"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".detalle_de_multa"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".detalle_de_vehiculo"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".menu_de_consultas"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".multas_e_historial"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".multas_vehiculo"
-            android:label="POLICIA DIGITAL" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".Login_Supervisor"
-            android:label="@string/title_activity_login__supervisor" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".menu_supervisor"
-            android:label="@string/title_activity_menu_supervisor" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".funcionarios"
-            android:label="@string/title_activity_menu_supervisor" >
+            android:label="AGEPOL" >
         </activity>
         <activity
             android:name=".detalle_de_multa2"
-            android:label="@string/title_activity_detalle_de_multa2" >
+            android:label="AGEPOL" >
+        </activity>
+        <activity
+            android:name=".mapa_del_crimen"
+            android:label="AGEPOL" >
         </activity>
     </application>
 

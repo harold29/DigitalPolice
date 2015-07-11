@@ -8,39 +8,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.retochacao.menu_de_consultas"
+    tools:context="com.example.android.retochacao.menu_supervisor"
     android:scrollbarAlwaysDrawVerticalTrack="true">
-
-    <TextView
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:text="MENU DE SUPERVISOR"
-        android:textSize="32sp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#000000"
+        android:layout_weight="3"
+        android:onClick="verFuncionarios"
+        android:layout_margin="4dp"
+        android:background="@drawable/funcionarios_button"
         />
-
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:text="OPCIONES DISPONIBLES"
-    android:textSize="26sp"
-    android:gravity="center"
-    android:textStyle="bold"
-    android:textColor="#000000"
-    />
 
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
-        android:layout_margin="10dp"
-        android:background="@drawable/id_button"
-        android:onClick="verFuncionarios"
+        android:layout_weight="3"
+        android:layout_margin="4dp"
+        android:background="@drawable/consultar_datos_xml"
         />
 
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="4dp"
+        android:background="@drawable/mapa_del_crimen_xml"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="4dp"
+        android:background="@drawable/reporte_criminalistico_xml"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="4dp"
+        android:background="@drawable/patrulla_button"
+        />
 
 </LinearLayout>
