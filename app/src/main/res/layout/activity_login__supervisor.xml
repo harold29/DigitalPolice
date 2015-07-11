@@ -60,41 +60,43 @@
             android:gravity="center"/>
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:padding="2dp">
 
         <Button
             android:id="@+id/Ingresar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_marginRight="30dp"
-            android:text="Ingresar"
             android:onClick="verFuncionarios"
-            android:background="@drawable/consultar_button"
+            android:background="@drawable/ingresar_button"
             android:padding="8dp"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="#000000"
+
             />
 
         <Button
             android:id="@+id/Limpiar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="Limpiar"
-            android:background="@drawable/consultar_button"
+            android:background="@drawable/limpiar_button"
             android:padding="8dp"
             android:onClick="limpiarDatos"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+
+            />
     </LinearLayout>
-
-
 
 </LinearLayout>
