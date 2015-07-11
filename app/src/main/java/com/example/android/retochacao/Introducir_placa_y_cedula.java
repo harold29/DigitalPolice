@@ -135,6 +135,7 @@ public class Introducir_placa_y_cedula extends ActionBarActivity {
         } else if (texto.matches(placaVieja)){
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
         } else {
+            nextScreen = new Intent(getApplicationContext(), Introducir_placa_y_cedula.class);
             editText.setText("Id Erroneo");
         }
 
