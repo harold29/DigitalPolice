@@ -90,76 +90,52 @@ public class Introducir_placa_y_cedula extends ActionBarActivity {
         Intent nextScreen;
         if (texto.matches(moto)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(part)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(cedula)) {
             nextScreen = new Intent(getApplicationContext(), multas_e_historial.class);
-            editText.setText("Si era");
         } else if (texto.matches(ptoLibrePart)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(ptoLibreMoto)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(tracDeSangre)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(ptoLibreCarga)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(carga)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(turistico)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(discapacitado)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(grua)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(transEscolar)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(transPrivado)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(minibus)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(ptoLibreTransPublico)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(taxi)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(rustico)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(autobus)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(autoUrbano)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(autoInterurbano)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(autobusInterurbanos)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(rusticosPeriferico)) {
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else if (texto.matches(placaVieja)){
             nextScreen = new Intent(getApplicationContext(), multas_vehiculo.class);
-            editText.setText("Si era");
         } else {
-            nextScreen = new Intent(getApplicationContext(), Introducir_placa_y_cedula.class);
-            editText.setText("Placa Erronea");
+            editText.setText("Id Erroneo");
         }
 
         startActivity(nextScreen);
