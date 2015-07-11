@@ -1,183 +1,226 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".multas_vehiculo"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/pantalla_chacao"
-    android:paddingTop="50dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingBottom="10dp"
-    >
-
+    android:id="@+id/GridLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:columnCount="3"
+    tools:context=".GridLayoutActivity" >
 
     <TextView
-        android:text="Multas del vehiculo\n de placa MDK34F"
-        android:textColor="#000000"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/multa"
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:text="Multas"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:textSize="30sp"
-        android:layout_margin="20dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:fontFamily="Roboto-Thin"
+        />
+
+    <TextView
+        android:id="@+id/multa"
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:text="Placa MDK34F"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="18sp"
+        android:background="#E1F5FE"
+        android:textColor="#0D47A1"
+        android:fontFamily="Roboto-Thin"
+        android:textStyle="bold"
         />
 
 
+    <!--fila 2-->
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:text="Boleta"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
 
+    <TextView
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:text="Fecha"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:stretchColumns="0"
-        android:background="#99C9DBEF"
-        >
+    <TextView
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:paddingTop="20dp"
+        android:text="Cédula"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        />
 
-        <TableRow>
-            <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                >
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Boleta"
-                    android:padding="10dip"
-                    android:textSize="20sp"
-                    android:textColor="#000000"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Fecha"
-                    android:padding="10dip"
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Cédula"
-                    android:padding="10dip"
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:gravity="right"/>
-
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:background="#99F44336">
-            <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                >
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="315324"
-                    android:padding="10dip"
-                    android:onClick="verMulta"
-                    android:clickable="true"
-                    android:textSize="15sp"
-                    android:textColor="#000000"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="02/07/13"
-                    android:padding="10dip"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="verCiudadano"
-                    android:text="V-21615116"
-                    android:clickable="true"
-                    android:padding="10dip"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:gravity="right"/>
-
-            </LinearLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:background="#993af422">
-            <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                >
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="923750"
-                    android:clickable="true"
-                    android:onClick="verMulta2"
-                    android:padding="10dip"
-                    android:textSize="15sp"
-                    android:textColor="#000000"/>
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:text="08/11/14"
-                    android:padding="10dip"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="verCiudadano"
-                    android:text="V-21615116"
-                    android:padding="10dip"
-                    android:clickable="true"
-                    android:textSize="15sp"
-                    android:textColor="#000000"
-                    android:gravity="right"/>
-
-            </LinearLayout>
-
-        </TableRow>
-    </TableLayout>
+    <!--fila 3-->
     <Button
+        android:layout_column="0"
+        android:layout_row="4"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="315324"
+        android:background="#FF8A80"
+        android:layout_marginTop="6dp"
+        />
+    <Button
+
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_gravity="right"
+        android:layout_width="70dp"
+        android:onClick="verMulta"
+        android:layout_height="40dp"
+        android:background="@drawable/cedula_button"
+        android:layout_marginTop="6dp"
+        />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_gravity="fill"
+        android:layout_row="4"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="02/07/2013"
+        android:background="#FF8A80"
+        android:textColor="#000000"
+        android:layout_marginTop="6dp"
+        />
+
+    <Button
+        android:layout_column="2"
+        android:layout_gravity="fill"
+        android:layout_row="4"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="V21615116"
+        android:background="#FF8A80"
+        android:layout_marginTop="6dp"
+        />
+
+    <Button
+
+        android:layout_column="2"
+        android:layout_row="4"
+        android:onClick="verCiudadano"
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cedula_button"
+        android:layout_marginTop="9dp"
+        />
+
+    <!--fila 4-->
+    <Button
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_row="5"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="923750"
+        android:background="#4caf50"
+        android:layout_marginTop="6dp"
+        />
+
+
+    <Button
+
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_gravity="right"
+        android:onClick="verMulta2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cedula_button"
+        android:layout_marginTop="9dp"
+        />
+    <TextView
+        android:layout_column="1"
+        android:layout_gravity="fill"
+        android:layout_row="5"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="08/11/2014"
+        android:textColor="#000000"
+        android:background="#4caf50"
+        android:layout_marginTop="6dp"
+        />
+
+    <Button
+        android:layout_column="2"
+        android:layout_gravity="fill"
+        android:layout_row="5"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="V21615116"
+        android:background="#4caf50"
+        android:layout_marginTop="6dp"
+        />
+
+    <Button
+
+        android:layout_column="2"
+        android:layout_row="5"
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:onClick="verCiudadano"
+        android:layout_height="40dp"
+        android:background="@drawable/cedula_button"
+        android:layout_marginTop="9dp"
+        />
+
+    <!--fila 4-->
+
+    <ImageButton
+        android:id="@+id/multa"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="@drawable/consultar_button"
         android:onClick="verCarnet"
-        android:padding="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
         android:layout_gravity="center"
-        android:text="Carnet de Circulacion"
-        android:textSize="24dp" />
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/consultar_button"
-        android:text="Inicio"
-        android:padding="8dp"
-        android:textSize="24dp"
-        android:onClick="inicio"
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center"
-        />
+        android:layout_row="6"
+        android:text="Antecedentes"
+        android:layout_marginTop="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="30sp"
+        android:background="@drawable/carnet_button"
+        android:textColor="#FFFFFF"
+        android:fontFamily="Roboto-Thin"/>
 
 
-</LinearLayout>
+</GridLayout>

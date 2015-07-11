@@ -8,19 +8,19 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-public class funcionarios extends ActionBarActivity {
+public class mapa_del_crimen extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_funcionarios);
+        setContentView(R.layout.activity_mapa_del_crimen);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_funcionarios, menu);
+        inflater.inflate(R.menu.menu_mapa_del_crimen, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -33,7 +33,7 @@ public class funcionarios extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent nextScreen = new Intent(getApplicationContext(), menu_supervisor.class);
+            Intent nextScreen = new Intent(getApplicationContext(), menu_de_consultas.class);
             startActivity(nextScreen);
             return true;
         }

@@ -1,27 +1,24 @@
 package com.example.android.retochacao;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-public class funcionarios extends ActionBarActivity {
+public class llenar_rc extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_funcionarios);
+        setContentView(R.layout.activity_llenar_rc);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_funcionarios, menu);
-        return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_llenar_rc, menu);
+        return true;
     }
 
     @Override
@@ -33,8 +30,6 @@ public class funcionarios extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent nextScreen = new Intent(getApplicationContext(), menu_supervisor.class);
-            startActivity(nextScreen);
             return true;
         }
 

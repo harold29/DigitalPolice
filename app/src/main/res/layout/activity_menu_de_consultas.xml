@@ -11,17 +11,6 @@
     tools:context="com.example.android.retochacao.menu_de_consultas"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="OPCIONES DISPONIBLES"
-        android:textSize="26sp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        />
-
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -36,6 +25,7 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:layout_margin="10dp"
+        android:onClick="verMapa"
         android:background="@drawable/mapa_del_crimen_xml"
         />
 

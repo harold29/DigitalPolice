@@ -45,6 +45,10 @@ public class menu_de_consultas extends ActionBarActivity {
         startActivity(nextScreen);
     }
 
+    public void verMapa (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), mapa_del_crimen.class);
+        startActivity(nextScreen);
+    }
 
 /*
     public void consultar(View view){
